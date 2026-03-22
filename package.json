@@ -1,10 +1,10 @@
-{
-    "private":  true,
-    "workspaces":  [
-                       "backend"
-                   ],
-    "name":  "web3-chess-root",
-    "scripts":  {
-                    "start":  "npm start --workspace=backend"
-                }
+﻿{
+  "name": "web3-chess-root",
+  "private": true,
+  "workspaces": [
+    "backend"
+  ],
+  "scripts": {
+    "start": "npm start --workspace=backend"
+  }
 }
