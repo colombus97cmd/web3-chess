@@ -1,11 +1,10 @@
 {
     "private":  true,
+    "workspaces":  [
+                       "backend"
+                   ],
     "name":  "web3-chess-root",
-    "engines":  {
-                    "node":  "\u003e=18"
-                },
     "scripts":  {
-                    "install":  "npm install --prefix backend",
-                    "start":  "npm start --prefix backend"
+                    "start":  "npm start --workspace=backend"
                 }
 }
