@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import "./App.css";
 import { createWeb3Modal, defaultConfig, useWeb3ModalProvider, useWeb3ModalAccount } from "@web3modal/ethers/react";
@@ -18,7 +18,7 @@ const localhost = { chainId: 31337, name: "Localhost (Anvil)", currency: "ETH", 
 const metadata = {
   name: "Web3 Chess",
   description: "Play Chess and wager BNB with global players securely on chain.",
-  url: "https://web3-chess-ten.vercel.app",
+  url: window.location.origin,
   icons: ["https://avatars.githubusercontent.com/u/37784886"]
 };
 
@@ -118,7 +118,7 @@ function App() {
                 <div>
                   <div className="game-controls">
                     <input type="text" placeholder="ID Partie" value={gameId} onChange={e => setGameId(e.target.value)} />
-                    <button onClick={createGame}>Créer</button>
+                    <button onClick={createGame}>Cr�er</button>
                     <button onClick={joinGame}>Rejoindre</button>
                   </div>
                   {gameActive && <ChessGame isPlayer1={isPlayer1} socket={socket} gameId={gameId} />}
