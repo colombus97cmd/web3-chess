@@ -1,0 +1,1 @@
+@openzeppelin/=C:/Users/david/Documents/web3-chess/contract/node_modules/@openzeppelin/

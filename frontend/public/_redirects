@@ -1,0 +1,6 @@
+/*
+  _redirects — Netlify SPA routing fix
+  Without this, refreshing any page (e.g. /play) returns a 404.
+  This tells Netlify to always serve index.html and let React Router take over.
+*/
+/* /index.html 200

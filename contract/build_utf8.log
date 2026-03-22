@@ -1,0 +1,115 @@
+﻿[2m2026-03-22T10:46:54.905107Z[0m [31mERROR[0m [2mfoundry_compilers_artifacts_solc::sources[0m[2m:[0m [3merror[0m[2m=[0m"D:/web3-chess/contract/../node_modules/@openzeppelin\contracts/access/Ownable.sol": Le chemin dÔÇÖacc├¿s sp├®cifi├® est introuvable. (os error 3)
+[2m2026-03-22T10:46:54.905952Z[0m [31mERROR[0m [2mfoundry_compilers_artifacts_solc::sources[0m[2m:[0m [3merror[0m[2m=[0m"D:/web3-chess/contract/../node_modules/@openzeppelin\contracts/utils/cryptography/ECDSA.sol": Le chemin dÔÇÖacc├¿s sp├®cifi├® est introuvable. (os error 3)
+[2m2026-03-22T10:46:54.906179Z[0m [31mERROR[0m [2mfoundry_compilers_artifacts_solc::sources[0m[2m:[0m [3merror[0m[2m=[0m"D:/web3-chess/contract/../node_modules/@openzeppelin\contracts/utils/cryptography/MessageHashUtils.sol": Le chemin dÔÇÖacc├¿s sp├®cifi├® est introuvable. (os error 3)
+Unable to resolve imports:
+      "@openzeppelin/contracts/access/Ownable.sol" in "D:/web3-chess/contract/contracts\ChessWager.sol"
+      "@openzeppelin/contracts/utils/cryptography/ECDSA.sol" in "D:/web3-chess/contract/contracts\ChessWager.sol"
+      "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol" in "D:/web3-chess/contract/contracts\ChessWager.sol"
+with remappings:
+      @openzeppelin/=D:/web3-chess/contract/../node_modules/@openzeppelin/
+      hardhat/=D:/web3-chess/contract/node_modules/hardhat/
+Compiling 1 files with Solc 0.8.33
+Solc 0.8.33 finished in 28.34ms
+forge : Error: 
+Compiler run failed:
+Au caractère Ligne:1 : 
+59
++ ... 
+avid\.foundry\bin"; 
+forge clean; forge 
+build > build.log 
+2>&1; node - ...
++                      
+                ~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Error: Compil   
+ er run failed::Str    
+ing) [], RemoteExc    
+eption
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Error (6275): Source ".
+./node_modules/@openzep
+pelin/contracts/access/
+Ownable.sol" not 
+found: File not found. 
+Searched the following 
+locations: 
+"/web3-chess/contract".
+ParserError: Source "..
+/node_modules/@openzepp
+elin/contracts/access/O
+wnable.sol" not found: 
+File not found. 
+Searched the following 
+locations: 
+"/web3-chess/contract".
+ --> contracts/ChessWag
+er.sol:4:1:
+  |
+4 | import "@openzeppel
+in/contracts/access/Own
+able.sol";
+  | ^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^
+
+Error (6275): Source ".
+./node_modules/@openzep
+pelin/contracts/utils/c
+ryptography/ECDSA.sol" 
+not found: File not 
+found. Searched the 
+following locations: 
+"/web3-chess/contract".
+ParserError: Source "..
+/node_modules/@openzepp
+elin/contracts/utils/cr
+yptography/ECDSA.sol" 
+not found: File not 
+found. Searched the 
+following locations: 
+"/web3-chess/contract".
+ --> contracts/ChessWag
+er.sol:5:1:
+  |
+5 | import "@openzeppel
+in/contracts/utils/cryp
+tography/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+
+Error (6275): Source ".
+./node_modules/@openzep
+pelin/contracts/utils/c
+ryptography/MessageHash
+Utils.sol" not found: 
+File not found. 
+Searched the following 
+locations: 
+"/web3-chess/contract".
+ParserError: Source "..
+/node_modules/@openzepp
+elin/contracts/utils/cr
+yptography/MessageHashU
+tils.sol" not found: 
+File not found. 
+Searched the following 
+locations: 
+"/web3-chess/contract".
+ --> contracts/ChessWag
+er.sol:6:1:
+  |
+6 | import "@openzeppel
+in/contracts/utils/cryp
+tography/MessageHashUti
+ls.sol";
+  | ^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
