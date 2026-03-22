@@ -47,7 +47,7 @@ io.on('connection', (socket) => {
 
 // In production, this must be a securely stored secret key
 // Replace this with your actual environment variable PRIVATE_KEY
-const privateKey = process.env.PRIVATE_KEY || "0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d";
+const privateKey = (process.env.PRIVATE_KEY || "").replace(/\\s/g, "") || "0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d";
 const signer = new ethers.Wallet(privateKey);
 
 console.log("Backend Signer Address:", signer.address);
