@@ -118,7 +118,7 @@ function App() {
                 <div>
                   <div className="game-controls">
                     <input type="text" placeholder="ID Partie" value={gameId} onChange={e => setGameId(e.target.value)} />
-                    <button onClick={createGame}>Créer</button>
+                    <button onClick={createGame}>CrÃ©er</button>
                     <button onClick={joinGame}>Rejoindre</button>
                   </div>
                   {gameActive && <ChessGame isPlayer1={isPlayer1} socket={socket} gameId={gameId} />}
