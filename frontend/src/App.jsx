@@ -18,7 +18,7 @@ const localhost = { chainId: 31337, name: "Localhost (Anvil)", currency: "ETH", 
 const metadata = {
   name: "Web3 Chess",
   description: "Play Chess and wager BNB with global players securely on chain.",
-  url: window.location.origin,
+  url: "https://web3-chess-ten.vercel.app",
   icons: ["https://avatars.githubusercontent.com/u/37784886"]
 };
 
@@ -29,7 +29,7 @@ createWeb3Modal({
   enableAnalytics: true
 });
 
-function App() {
+function App() { console.log("WalletConnect Project ID:", projectId ? "Loaded" : "MISSING");
   const { address, chainId, isConnected } = useWeb3ModalAccount();
   const { walletProvider } = useWeb3ModalProvider();
   const [contract, setContract] = useState(null);
@@ -118,7 +118,7 @@ function App() {
                 <div>
                   <div className="game-controls">
                     <input type="text" placeholder="ID Partie" value={gameId} onChange={e => setGameId(e.target.value)} />
-                    <button onClick={createGame}>Créer</button>
+                    <button onClick={createGame}>CrÃ©er</button>
                     <button onClick={joinGame}>Rejoindre</button>
                   </div>
                   {gameActive && <ChessGame isPlayer1={isPlayer1} socket={socket} gameId={gameId} />}
