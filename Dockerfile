@@ -1,8 +1,7 @@
 ﻿FROM node:20-slim
 WORKDIR /app
-COPY package.json ./
-COPY backend/package*.json ./backend/
+COPY backend/package*.json ./
 RUN npm install
-COPY . .
+COPY backend/ .
 EXPOSE 3001
-CMD ["npm", "start", "--workspace=backend"]
+CMD ["node", "index.js"]
